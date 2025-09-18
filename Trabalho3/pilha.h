@@ -25,7 +25,7 @@ bool pilha_is_empty(const Pilha *P);                // Y=IsEmpty(P): se Y = True
 bool pilha_is_full(const Pilha *P);                 // Y=IsFull(P): se Y = True, a pilha está cheia (para aumentar o tamanho)
 void pilha_empty(Pilha *P);                         // Empty(P): esvazia uma pilha
 void pilha_free_memory(Pilha *P);                   // libera a memória (no final, quando não será mais usada a pilha); destrói essa pilha temporária
-float pilha_aumenta_memory(Pilha *P, size_t aumento); 
+float pilha_aumenta_memory(Pilha *P, size_t aumento); // função para aumentar a memória
 
 
 //? Observações

@@ -79,11 +79,11 @@ void pilha_free_memory(Pilha *P) {
 //? Retorna o topo
 float pilha_ver_topo(const Pilha *P, elem *X) {
     if (pilha_is_empty(P)) {
-        return 0; // falhou
+        return -1; // falhou
     }
 
     *X = (*P).itens[(*P).topo - 1];  // pega o último elemento
-    return 1; // sucesso
+    return 0; // sucesso
 }
 
 //? Verifição se a pilha está vazia
