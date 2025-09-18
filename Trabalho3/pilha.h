@@ -17,13 +17,15 @@ typedef struct Pilha {
 
 
 //? Funções
-float pilha_create(Pilha *P, size_t total);    // Create(P): cria pilha P vazia
-float pilha_empilha(Pilha *P, elem X);         // Push(P,X): empilha o valor da variável X na pilha P
-float pilha_desempilha(Pilha *P, elem *X);     // Pop(P,X): desempilha P e retorna X (valor do topo desempilhado)
-float pilha_ver_topo(const Pilha *P, elem *X); // X=top(P): vê quem está no topo
-bool pilha_is_empty(const Pilha *P);           // Y=IsEmpty(P): se Y = True, a pilha está vazia
-void pilha_empty(Pilha *P);                    // Empty(P): esvazia uma pilha
-void pilha_free_memory(Pilha *p);              // libera a memória
+float pilha_create(Pilha *P, size_t total);         // Create(P): cria pilha P vazia
+float pilha_empilha(Pilha *P, elem X);              // Push(P,X): empilha o valor da variável X na pilha P
+float pilha_desempilha(Pilha *P, elem *X);          // Pop(P,X): desempilha P e retorna X (valor do topo desempilhado)
+float pilha_ver_topo(const Pilha *P, elem *X);      // X=top(P): vê quem está no topo
+bool pilha_is_empty(const Pilha *P);                // Y=IsEmpty(P): se Y = True, a pilha está vazia
+bool pilha_is_full(const Pilha *P);                 // Y=IsFull(P): se Y = True, a pilha está cheia (para aumentar o tamanho)
+void pilha_empty(Pilha *P);                         // Empty(P): esvazia uma pilha
+void pilha_free_memory(Pilha *P);                   // libera a memória (no final, quando não será mais usada a pilha); destrói essa pilha temporária
+float pilha_aumenta_memory(Pilha *P, size_t aumento); 
 
 
 //? Observações
