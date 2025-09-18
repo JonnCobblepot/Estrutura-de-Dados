@@ -24,7 +24,6 @@
 #include <stddef.h>  // size_t
 #include <stdbool.h> // booleano
 #include <string.h>
-#include <ctype.h>
 #include <math.h>
 #include "pilha.h"   // cabeçalho
 
@@ -49,7 +48,8 @@ int main() {
             break; // Sai do loop
         }
         
-        //? Comandos das operações
+        //! Comandos das operações
+        //? Soma
         else if (strcmp(buffer, "+") == 0) {
             if (pilha.topo < 2) {
                 continue;
@@ -62,6 +62,7 @@ int main() {
                 printf("%.2f\n", resultado);
             }
         } 
+        //? Subtração
         else if (strcmp(buffer, "-") == 0) {
             if (pilha.topo < 2) {
                 continue;
@@ -74,6 +75,7 @@ int main() {
                 printf("%.2f\n", resultado);
             }
         }
+        //? Multiplicação
         else if (strcmp(buffer, "*") == 0) {
             if (pilha.topo < 2) {
                 continue;
@@ -86,6 +88,7 @@ int main() {
                 printf("%.2f\n", resultado);
             }
         }
+        //? Divisão
         else if (strcmp(buffer, "/") == 0) {
             if (pilha.topo < 2) {
                 continue;
@@ -103,6 +106,7 @@ int main() {
                 }
             }
         }
+        //? Potência
         else if (strcmp(buffer, "^") == 0) {
             if (pilha.topo < 2) {
                 continue;
