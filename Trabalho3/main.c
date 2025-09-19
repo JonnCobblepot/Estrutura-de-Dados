@@ -41,7 +41,7 @@ int main() {
     while (1) {
         
         fgets(buffer, tamanho_buffer, stdin); // lê cada linha passada
-        buffer[strcspn(buffer, "\n")] = '\0'; // Remove quebra de linha \n do buffer para comparar
+        buffer[strcspn(buffer, "\n\r")] = '\0'; // Remove quebra de linha \n do buffer para comparar
 
         //? Comando "off" = saída
         if (strcmp(buffer, "off") == 0) {
