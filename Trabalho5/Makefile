@@ -1,9 +1,9 @@
-EXEC = Fila_impressao
+EXEC = Lista_playlist
 
 all: $(EXEC)
 
-$(EXEC): main.c fila.c
-	gcc main.c fila.c -o $(EXEC) -lm
+$(EXEC): main.c lista.c
+	gcc main.c lista.c -o $(EXEC) -lm
 
 run: all
 	./$(EXEC)
