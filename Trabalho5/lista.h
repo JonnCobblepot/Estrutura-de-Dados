@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // //! ======================== CABEÇALHO DA LISTA DINÂMICA ENCADEADA ========================
 
 // //? Definindo o cabeçalho para poder ser usado tbm por outros arquivos
@@ -44,6 +45,8 @@
 // #endif // LISTA_H
 
 
+=======
+>>>>>>> ee9b6a27fa388904da9bd4b0e0c9ba99dd2001d2
 #ifndef LISTA_H
 #define LISTA_H
 

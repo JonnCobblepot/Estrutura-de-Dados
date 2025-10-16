@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // //! ================================ LISTA ENCADEADA DINÂMICA ================================
 
 // //? Importações
@@ -137,6 +138,8 @@
 //     }
 // }
 
+=======
+>>>>>>> ee9b6a27fa388904da9bd4b0e0c9ba99dd2001d2
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
